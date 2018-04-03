@@ -1,0 +1,858 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax AsciiMath Test Page</title>
+<!-- Copyright (c) 2012-2015 The MathJax Consortium -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</head>
+<body>
+
+<hr>
+<p> Q. 2013-8M3 #1: </p>
+
+<canvas id="2013_8M3_1" width="300" height="50" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("2013_8M3_1");
+var ctx = c.getContext("2d");
+ctx.rect(50, 20, 200, 1);
+ctx.stroke();
+
+ctx.textAlign="center"; 
+ctx.textBaseline="middle"; 
+ctx.font="16px Arial";
+ctx.fillText("A",50,35);
+ctx.fillText("B",250,35);
+
+</script> 
+
+<p> What is the length of segment AB shown above? </p>
+<p> A. 0.52 millimeter</p>
+<p> B. 0.52 centimeter</p>
+<p> C. 5.2 millimeters</p>
+<p> D. 5.2 centimeters</p>
+<p> E. 520 millimeters</p>
+
+<hr>
+<p> Q. 2013-8M3 #2: </p>
+<p> A nickel, a dime, and a quarter are flipped at the same time. Each coin can land either heads up (H) or tails up (T). List all the different possible outcomes for this event in the chart below. The list has been started for you.</p>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+}
+</style>
+ <table style="width:30%">
+  <tr>
+    <th>Nickel</th>
+    <th>Dime</th>
+    <th>Quarter</th>
+  </tr>
+  <tr>
+    <th>H</th>
+    <th>H</th>
+    <th>H</th>
+  </tr>
+  <tr>
+    <th>H</th>
+    <th>H</th>
+    <th>T</th>
+  </tr>
+</table> 
+
+<hr>
+<p> Q. 2013-8M3 #3: </p>
+<canvas id="2013_8M3_3" width="260" height="200" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_3");
+var ctx = c.getContext("2d");
+
+ctx.translate(c.width/2, c.height/2, 0, -1);
+
+ctx.beginPath();
+
+ctx.moveTo(-90,90);
+ctx.lineTo(90,-90);
+
+ctx.moveTo(90,90);
+ctx.lineTo(-90,-90);
+
+ctx.moveTo(0,100);
+ctx.lineTo(0,-100);
+
+ctx.moveTo(50,100);
+ctx.lineTo(50,-100);
+
+ctx.lineWidth = 1.5;
+ctx.closePath();
+ctx.stroke();
+
+ctx.font="15px Arial";
+
+ctx.fillText("X",55,10);
+ctx.fillText("Y",-90,80);
+ctx.fillText("Z",5,100);
+ctx.fillText("V",75,75);
+
+</script>
+
+<p>In the graph above, which two lines appear to be <u>perpendicular</u> to each other?</p>
+
+<p> A. V and Z</p>
+<p> B. Z and Y</p>
+<p> C. Y and V</p>
+<p> D. X and V</p>
+<p> E. X and Y</p>
+
+
+<hr>
+<p> Q. 2013-8M3 #4: </p>
+<p>Which pair of rays forms an angle of 30 degrees?</p>
+
+<p> A.</p>
+<canvas id="2013_8M3_4a" width="200" height="200" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_4a");
+var ctx = c.getContext("2d");
+
+ctx.translate(c.width/2, c.height/2, 0, -1);
+
+ctx.rotate(-20*Math.PI/180);
+
+ctx.beginPath();
+
+ctx.moveTo(100*Math.cos(0),100*Math.sin(0));
+ctx.lineTo(0,0);
+ctx.lineTo(100*Math.cos(Math.PI/6),100*Math.sin(Math.PI/6));
+ctx.lineTo(0,0);
+
+ctx.lineWidth = 1.5;
+ctx.closePath();
+
+ctx.arc(0, 0, 20, 0, Math.PI/6);
+
+ctx.font="15px Arial";
+
+ctx.stroke();
+
+</script>
+
+<p> B.</p>
+<canvas id="2013_8M3_4b" width="200" height="200" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_4b");
+var ctx = c.getContext("2d");
+
+ctx.translate(c.width/2, c.height/2, 0, -1);
+
+ctx.rotate(220*Math.PI/180);
+
+ctx.beginPath();
+
+ctx.moveTo(100*Math.cos(0),100*Math.sin(0));
+ctx.lineTo(0,0);
+ctx.lineTo(100*Math.cos(Math.PI/4),100*Math.sin(Math.PI/4));
+ctx.lineTo(0,0);
+
+ctx.lineWidth = 1.5;
+ctx.closePath();
+
+ctx.arc(0, 0, 20, 0, Math.PI/4);
+
+ctx.stroke();
+
+</script>
+
+<p> C.</p>
+<canvas id="2013_8M3_4c" width="200" height="200" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_4c");
+var ctx = c.getContext("2d");
+
+ctx.translate(c.width/2, c.height/2, 0, -1);
+
+ctx.rotate(20*Math.PI/180);
+
+ctx.beginPath();
+
+ctx.lineTo(100*Math.cos(0),100*Math.sin(0));
+ctx.lineTo(0,0);
+ctx.lineTo(100*Math.cos(Math.PI/3),100*Math.sin(Math.PI/3));
+ctx.lineTo(0,0);
+
+ctx.lineWidth = 1.5;
+ctx.closePath();
+
+ctx.arc(0, 0, 20, 0, Math.PI/3);
+
+ctx.stroke();
+
+</script>
+
+<p> D.</p>
+<canvas id="2013_8M3_4d" width="200" height="200" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_4d");
+var ctx = c.getContext("2d");
+
+ctx.translate(c.width/2, c.height/2, 0, -1);
+
+ctx.rotate(-70*Math.PI/180);
+
+ctx.beginPath();
+
+ctx.lineTo(100*Math.cos(0),100*Math.sin(0));
+ctx.lineTo(0,0);
+ctx.lineTo(100*Math.cos(Math.PI/2),100*Math.sin(Math.PI/2));
+ctx.lineTo(0,0);
+
+ctx.lineWidth = 1.5;
+ctx.closePath();
+
+ctx.arc(0, 0, 20, 0, Math.PI/2);
+
+ctx.stroke();
+
+</script>
+
+<p> E.</p>
+<canvas id="2013_8M3_4e" width="200" height="200" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_4e");
+var ctx = c.getContext("2d");
+
+ctx.translate(c.width/2, c.height/2, 0, -1);
+
+ctx.rotate(-130*Math.PI/180);
+
+ctx.beginPath();
+
+ctx.lineTo(100*Math.cos(0),100*Math.sin(0));
+ctx.lineTo(0,0);
+ctx.lineTo(100*Math.cos(4*Math.PI/5),100*Math.sin(4*Math.PI/5));
+ctx.lineTo(0,0);
+
+ctx.lineWidth = 1.5;
+ctx.closePath();
+
+ctx.arc(0, 0, 20, 0, 4*Math.PI/5);
+
+ctx.stroke();
+
+</script>
+
+<hr>
+<p> Q. 2013-8M3 #5: </p>
+<p> Rima and Eric have earned a total of `135` tokens to buy items at the school store. The ratio of the number of tokens that Rima has to the number of tokens that Eric has is `8` to `7`. How many tokens does Rima have? </p>
+<p> A. 8</p>
+<p> B. 15</p>
+<p> C. 56</p>
+<p> D. 72</p>
+<p> E. 120</p>
+
+<hr>
+<p> Q. 2013-8M3 #6: </p>
+<p> Points `A` and `B` are on a number line. the coordinates of point `B` is `3` and the coordinate of the midpoint of segment `AB` is `-5`. What is the coordinate of point `A`? </p>
+<p> A. `-13`</p>
+<p> B. `-2`</p>
+<p> C. `-1`</p>
+<p> D. `8`</p>
+<p> E. `11`</p>
+
+<hr>
+<p> Q. 2013-8M3 #7: </p>
+<p> Rick has earned a total of `581` points on all of his science tests. His overall test average (mean) is `83`. How many tests has Rick taken? </p>
+<p> A. `6`</p>
+<p> B. `7`</p>
+<p> C. `8`</p>
+<p> D. `9`</p>
+<p> E. `10`</p>
+
+<hr>
+<p> Q. 2013-8M3 #8: </p>
+<p>Martine is filling a rectangular fish tank using two hoses that fill the tank the same flow rate. When the tank is about half full, she turns off the one hose but does not change the flow rate of the other hose. Which of the following graphs best represents how the depth of the wather in the tank changes over time?</p>
+
+<p> A.</p>
+<canvas id="2013_8M3_8a" width="200" height="150" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_8a");
+var ctx = c.getContext("2d");
+
+
+ctx.beginPath();
+
+ctx.moveTo(0,0);
+ctx.lineTo(0,150);
+ctx.lineTo(200,150);
+
+ctx.fillText("Depth",10,10);
+ctx.fillText("Time",160,140);
+
+ctx.moveTo(0,150);
+ctx.lineTo(100,100);
+ctx.lineTo(200,0);
+
+
+ctx.lineWidth = 1.5;
+
+ctx.font="15px Arial";
+
+ctx.stroke();
+
+</script>
+
+
+<p> B.</p>
+<canvas id="2013_8M3_8b" width="200" height="150" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_8b");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+
+ctx.moveTo(0,0);
+ctx.lineTo(0,150);
+ctx.lineTo(200,150);
+
+ctx.fillText("Depth",10,10);
+ctx.fillText("Time",160,140);
+
+
+ctx.moveTo(0,150);
+ctx.lineTo(50,70);
+ctx.lineTo(200,0);
+
+ctx.lineWidth = 1.5;
+
+ctx.font="15px Arial";
+
+ctx.stroke();
+
+</script>
+
+<p> C.</p>
+<canvas id="2013_8M3_8c" width="200" height="150" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_8c");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+
+ctx.moveTo(0,0);
+ctx.lineTo(0,150);
+ctx.lineTo(200,150);
+
+ctx.fillText("Depth",10,10);
+ctx.fillText("Time",160,140);
+
+
+ctx.moveTo(0,150);
+ctx.lineTo(200,0);
+
+ctx.lineWidth = 1.5;
+
+ctx.font="15px Arial";
+
+ctx.stroke();
+
+</script>
+
+<p> D.</p>
+<canvas id="2013_8M3_8d" width="200" height="150" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_8d");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+
+ctx.moveTo(0,0);
+ctx.lineTo(0,150);
+ctx.lineTo(200,150);
+
+ctx.fillText("Depth",10,10);
+ctx.fillText("Time",160,140);
+
+
+ctx.moveTo(0,150);
+ctx.lineTo(70,130);
+ctx.lineTo(140,80);
+ctx.lineTo(200,0);
+
+ctx.lineWidth = 1.5;
+
+ctx.font="15px Arial";
+
+ctx.stroke();
+
+</script>
+
+<p> E.</p>
+<canvas id="2013_8M3_8e" width="200" height="150" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("2013_8M3_8e");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+
+ctx.moveTo(0,0);
+ctx.lineTo(0,150);
+ctx.lineTo(200,150);
+
+ctx.fillText("Depth",10,10);
+ctx.fillText("Time",160,140);
+
+
+ctx.moveTo(0,150);
+ctx.lineTo(40,80);
+ctx.lineTo(120,20);
+ctx.lineTo(200,0);
+
+ctx.lineWidth = 1.5;
+
+ctx.font="15px Arial";
+
+ctx.stroke();
+
+</script>
+
+<hr>
+<p> Q. 2013-8M7 #1: </p>
+<img src="https://nces.ed.gov/NationsReportCard/nqt/Details/ItemResource?TableID=a4ab3655-38ad-4e3b-8ea4-efc8f9bc4b65" alt="Hand Span"> 
+<p> As part of a science experiment, Vince is measuring the lengths of the hand spans of different people. Which of the following units would be most appropriate? </p>
+<p> A. Centimeters</p>
+<p> B. Cubic meters</p>
+<p> C. Kilograms</p>
+<p> D. Liters</p>
+<p> E. Square centimeters</p>
+
+<hr>
+<p> Q. 2013-8M7 #2: </p>
+<p> Sally can buy 20 pencils for $0.99. What is the greatest number of pencils Sally can buy for $3.00 ? </p>
+<p> A. 30</p>
+<p> B. 45</p>
+<p> C. 60</p>
+<p> D. 75</p>
+<p> E. 90</p>
+
+<hr>
+<p> Q. 2013-8M7 #3: </p>
+<p> The spinner below is divided into 6 congruent sectors.</p>
+
+<canvas id="myCanvas3" width="200" height="200" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c3 = document.getElementById("myCanvas3");
+var ctx = c3.getContext("2d");
+
+ctx.beginPath();
+
+ctx.lineWidth=1.5;
+ctx.arc(100, 100, 95, 0, 2 * Math.PI);
+
+ctx.moveTo(100+95*Math.cos(Math.PI*(0+(1/6))),100+95*Math.sin(Math.PI*(0+(1/6))));
+ctx.lineTo(100+95*Math.cos(Math.PI*(1+(1/6))),100+95*Math.sin(Math.PI*(1+(1/6))));
+ctx.moveTo(100+95*Math.cos(Math.PI*(0+(3/6))),100+95*Math.sin(Math.PI*(0+(3/6))));
+ctx.lineTo(100+95*Math.cos(Math.PI*(1+(3/6))),100+95*Math.sin(Math.PI*(1+(3/6))));
+ctx.moveTo(100+95*Math.cos(Math.PI*(0+(5/6))),100+95*Math.sin(Math.PI*(0+(5/6))));
+ctx.lineTo(100+95*Math.cos(Math.PI*(1+(5/6))),100+95*Math.sin(Math.PI*(1+(5/6))));
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.lineWidth=2.5;
+ctx.moveTo(100,100);
+ctx.lineTo(100,29);
+ctx.lineTo(93,40);
+ctx.lineTo(107,40);
+ctx.lineTo(100,30);
+ctx.fill();
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.arc(100, 100, 3, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.closePath();
+
+ctx.textAlign="center"; 
+ctx.textBaseline="middle"; 
+ctx.font="16px Arial";
+ctx.fillText("Red"  ,100+65*Math.cos(Math.PI*(0+(2/6))) ,100+65*Math.sin(Math.PI*(0+(2/6))));
+ctx.fillText("Blue" ,100+65*Math.cos(Math.PI*(0+(4/6))) ,100+65*Math.sin(Math.PI*(0+(4/6))));
+ctx.fillText("Red"  ,100+65*Math.cos(Math.PI*(0+(6/6))) ,100+65*Math.sin(Math.PI*(0+(6/6))));
+ctx.fillText("Green",100+65*Math.cos(Math.PI*(0+(8/6))) ,100+65*Math.sin(Math.PI*(0+(8/6))));
+ctx.fillText("Blue" ,100+65*Math.cos(Math.PI*(0+(10/6))),100+65*Math.sin(Math.PI*(0+(10/6))));
+ctx.fillText("Red"  ,100+65*Math.cos(Math.PI*(0+(12/6))),100+65*Math.sin(Math.PI*(0+(12/6))));
+
+</script>
+
+<p> If the arrow is spun once, what is the probability that the arrow will land on either Red or Blue?</p>
+
+<p> A. `5/6` </p>
+<p> B. `2/3` </p>
+<p> C. `1/2` </p>
+<p> D. `1/5` </p>
+<p> E. `1/6` </p>
+
+
+<hr>
+<p> Q. 2013-8M7 #4: </p>
+<p> Draw two lines of symmetry for the rhombus below. </p>
+
+<hr>
+<p> Q. 2013-8M7 #5: </p>
+<p> Stacie rides her bike 3 miles in 12 minutes. At this rate, how long will it take her to ride her bike 7 miles?</p>
+<p> A. 22 minutes </p>
+<p> B. 28 minutes </p>
+<p> C. 36 minutes </p>
+<p> D. 43 minutes </p>
+<p> E. 84 minutes </p>
+
+<hr>
+<p> Q. 2013-8M7 #6: </p>
+<p> The expression `80n` could represent</p>
+<p> A. an increase of `80` cents in the cost of a candy bar that originally cost `n` cents </p>
+<p> B. a decrease of `80` cents in the cost of a candy bar that originally cost `n` cents </p>
+<p> C. the cost of each candy bar in a pack of `n` candy bars where the total cost of the pack is `80` cents </p>
+<p> D. the cost of each candy bar in a pack of `80` candy bars where the total cost of the pack is `n` cents </p>
+<p> E. the total cost, in cents, of `n` candy bars at a cost of `80` cents for each candy bar </p>
+
+<hr>
+<p> Q. 2013-8M7 #7: </p>
+<p> Which of the following geometric solids has both of the properties listed?</p>
+ <ul>
+  <li>The base is a polygon with 4 sides of equal length.</li>
+  <li>The other faces of the solid meet at a common vertex.</li>
+</ul> 
+<p> A. Cone</p>
+<p> B. Cube</p>
+<p> C. Rectangular prism</p>
+<p> D. Right cylinder</p>
+<p> E. Square pyramid</p>
+
+<hr>
+<p> Q. 2013-8M7 #8: </p>
+<p> Helga’s process of calculating the tip to leave in a restaurant starts with the bill for food and drink.</p>
+ <ul>
+  <li>First, she rounds the bill to the nearest ten cents.</li>
+  <li>Then she moves the decimal point in the rounded total one place to the left.</li>
+  <li>Finally, she doubles that amount.</li>
+</ul> 
+<p> A. 2%</p>
+<p> B. 5%</p>
+<p> C. 10%</p>
+<p> D. 15%</p>
+<p> E. 20%</p>
+
+<hr>
+<p> Q. 2013-8M7 #9: </p>
+<p> Tyler drinks 24 fluid ounces of milk each day for 7 days. How many quarts of milk does he drink in the 7 days? Do not round your answer.</p> 
+<p>(1 quart = 32 fluid ounces) </p>
+<p> Answer: ____________________ quarts</p>
+
+<hr>
+<p> Q. 2013-8M7 #10: </p>
+<p> What are all values of `n` for which `-2n >= n + 6`? </p>
+<p> A. `n<=-2`</p>
+<p> B. `n>=-2`</p>
+<p> C. `n>=0`</p>
+<p> D. `n<=6`</p>
+<p> E. `n>=6`</p>
+
+<hr>
+<p> Q. 2013-8M7 #11: </p>
+<canvas id="myCanvas" width="250" height="200" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+
+ctx.xm = .5 + .5*c.width;
+ctx.ym = .5 + .5*c.height;
+
+ctx.alpha = -20
+ctx.beta  = .5
+
+ctx.x1 = 20;
+
+ctx.y1 = ctx.ym-ctx.alpha-ctx.beta*(ctx.x1-ctx.xm);
+
+ctx.x2 = ctx.xm+100;
+ctx.y2 = ctx.ym-ctx.alpha-ctx.beta*(ctx.x2-ctx.xm);
+
+ctx.x3 = ctx.x2+5;
+ctx.y3 = ctx.ym-ctx.alpha-ctx.beta*(ctx.x3-ctx.xm);
+
+
+
+ctx.moveTo(ctx.xm,c.height);
+ctx.lineTo(ctx.xm,20);
+ctx.moveTo(0,ctx.ym);
+ctx.lineTo(c.width-15,ctx.ym);
+
+
+ctx.moveTo(ctx.x2,ctx.y2);
+ctx.lineTo(ctx.x1,ctx.y1);
+
+ctx.lineWidth = 1.5;
+ctx.closePath();
+ctx.stroke();
+
+ctx.font="15px Arial";
+
+ctx.fillText("X",c.width-10,.5 + .5*c.height + 5);
+ctx.fillText("Y",.5 + .5*c.width-5,15);
+ctx.fillText("L",ctx.x3,ctx.y3);
+
+</script>
+
+<p>Which of the following statements is true about line L shown above? </p>
+
+<p> A. Line L has a positive slope and a positive y-intercept. </p>
+<p> B. Line L has a positive slope and a negative y-intercept.</p>
+<p> C. Line L has a zero slope and a negative y-intercept.</p>
+<p> D. Line L has a negative slope and a positive y-intercept. </p>
+<p> E. Line L has a negative slope and a negative y-intercept.</p>
+
+<hr>
+<p> Q. 2013-8M7 #12: </p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Yellowstone_dusk_dawn_Old_Faithful_Aat23.jpg/169px-Yellowstone_dusk_dawn_Old_Faithful_Aat23.jpg" alt="Old Faithful"> 
+<p> Old Faithful is one of hundreds of geysers in Yellowstone National Park. Predicting when Old Faithful will erupt next can be done by timing the previous eruption.</p>
+<p>If an eruption lasts `t` minutes, then the next eruption will occur approximately `12.5t` plus `33` minutes after the eruption ends. If the previous eruption lasted `6` minutes and ended at 1:23  P.M., when is the next eruption expected to occur?</p>
+<p>Answer: _______________ </p>
+
+<hr>
+<p> Q. 2013-8M7 #13: </p>
+<p> The ratio of boys to girls to adults at a school party was 6:5:2. There were 78 people at the party. How many of them were adults? </p>
+<p> A. 6</p>
+<p> B. 12</p>
+<p> C. 18</p>
+<p> D. 30</p>
+<p> E. 36</p>
+
+<hr>
+<p> Q. 2013-8M7 #14: </p>
+<p> Liz is conducting an experiment to see whether students learn vocabulary words by a new method faster than they learn them by the old method. Fifty students will participate in the experiment. She pairs off the 50 students so that the two students in each pair have similar levels of vocabulary. One student in each pair then learns words by the old method. The other student in the pair learns words by the new method. Why did Liz pair off her 50 students instead of just having all 50 of them use the new method? </p>
+
+<hr>
+<p> Q. 2013-8M7 #15: </p>
+<p> Mary draws a circle and a square on a piece of paper. What is the greatest possible number of points of intersection between the circle and square? </p>
+<p> A. 2</p>
+<p> B. 4</p>
+<p> C. 6</p>
+<p> D. 8</p>
+<p> E. 10</p>
+
+<hr>
+<p> Q. 2013-8M7 #16: </p>
+<p> (a) If `c` and `d` are different prime numbers less than `10` and the sum `c + d` is a <u>composite</u> number greater than `10`, what is one possible pair of values for `c` and `d` ? </p>
+<p>`c` = ____________________ `d` = ____________________</p>
+<p>(b) If `j` and `k` are different prime numbers less than `10` and the sum `j + k` is a <u>prime number</u> less than `10`, what is one possible pair of values for `j` and `k` ?</p>
+<p>`j` = ____________________ `k` = ____________________
+(c) If `s` and t are different prime numbers greater than `10`, explain why the sum `s + t` cannot be a prime number.</p>
+
+<hr>
+<p> Q. 2011-8M8 #1: </p>
+<p> Which of the following numbers is twenty-three and eight-thousandths? </p>
+<p> A. `230.8`</p>
+<p> B. `23.8`</p>
+<p> C. `23.08`</p>
+<p> D. `23.008`</p>
+<p> E. `23.0008`</p>
+
+<hr>
+<p> Q. 2011-8M8 #2: </p>
+<p> Geometry</p>
+
+<hr>
+<p> Q. 2011-8M8 #3: </p>
+<p> The admission price to a movie theater is `$7.50` for each adult and `$4.75` for each child. Which of the following equations can be used to determine `T` , the total admission price, in dollars, for `x` adults and `y` children?  </p>
+<p> A. `T = (7.50 + 4.75)(x + y)`</p>
+<p> B. `T = 7.50x + 4.75y`</p>
+<p> C. `T = 7.50y + 4.75x`</p>
+<p> D. `T = (7.50x)(4.75y)`</p>
+<p> E. `T = (7.50 + 4.75) + (x + y)`</p>
+
+
+<hr>
+<p> Q. 2011-8M8 #4: </p>
+<p> Ken has a box that contains 12 marbles. The table below shows the number of marbles of each color that are in the box.</p>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+}
+</style>
+ <table style="width:30%">
+  <tr>
+    <th>Color</th>
+    <th>Number of Marbles</th>
+  </tr>
+  <tr>
+    <td>Yellow</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Green</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Blue</td>
+    <td>2</td>
+  </tr>
+</table> 
+<p> Ken randomly selects `2` marbles from the box and keeps them. If Ken then randomly selects a third marble from the box, the probability that he will select a green marble is `2/10`. Which of the following statements could be true about the first 2 marbles Ken selected? </p>
+
+<p> A. One was yellow and one was green.</p>
+<p> B. One was orange and one was yellow.</p>
+<p> C. One was orange and one was blue.</p>
+<p> D. Both were green.</p>
+<p> E. Both were yellow.</p>
+
+<hr>
+<p> Q. 2011-8M8 #5: </p>
+<p> Which of the following equations is NOT equivalent to the equation  `n + 18 = 23`? </p>
+<p> A. `23 = n - 18`</p>
+<p> B. `23 = 18 + n`</p>
+<p> C. `18 = 23 - n`</p>
+<p> D. `18 + n = 23`</p>
+<p> E. `n = 23 - 18`</p>
+
+<hr>
+<p> Q. 2011-8M8 #6: </p>
+<p> On average, thunder is heard in Tororo, Uganda, 251 days each year. What is the probability that thunder will be heard in Tororo on any day? (1 year = 365 days) </p>
+<p> Give your answer to the nearest percent. </p>
+<p> Answer: ____________________ %</p>
+
+
+<hr> <!-- REQUIRES Image -->
+<p> Q. 2011-8M8 #7: </p>
+<p> The figure below shows Jackson Pond. </p>
+<canvas id="myCanvas2" width="200" height="300" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c2 = document.getElementById("myCanvas2");
+var ctx = c2.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(30,270);
+ctx.lineTo(120,270);
+ctx.lineTo(120,30);
+ctx.lineTo(180,30);
+ctx.closePath();
+
+ctx.rect(120,30,15,15);
+ctx.rect(105,255,15,15);
+ctx.stroke();
+
+ctx.font="15px Arial";
+ctx.fillText("18 ft",60,290);
+ctx.fillText("24 ft",130,200);
+ctx.fillText("16 ft",80,80);
+ctx.fillText("X",105,35);
+ctx.fillText("Y",185,35);
+</script>
+
+<p> What is the distance across Jackson Pond from point `X` to point `Y`? </p>
+<p> A. 8 feet</p>
+<p> B. 10 feet</p>
+<p> C. 12 feet</p>
+<p> D. 14 feet</p>
+<p> E. 22 feet</p>
+
+<hr>
+<p> Q. 2011-8M8 #8: </p>
+<p> If `n` is any integer, which of the following expressions must be an odd integer? </p>
+<p> A. `n+1`</p>
+<p> B. `2n`</p>
+<p> C. `2n+1`</p>
+<p> D. `3n`</p>
+<p> E. `3n+1`</p>
+
+<hr>
+<p> Q. 2011-8M8 #9: </p>
+<p> Bags of Healthy Snack Mix are packed into small and large cartons. The small cartons contain 12 bags each. The large cartons contain 18 bags each. </p>
+<p> Meg claimed that she packed a total of 150 bags of Healthy Snack Mix into 2 small cartons and 7 large cartons. </p>
+<p> Could Meg have packed the cartons the way she claimed? </p>
+
+<hr>
+<p> Q. 2011-8M8 #10: </p>
+<p>A company from Japan was doing business in the United States. In 2007 it had an annual income of $1,000,000 and annual expenses of $800,000. The formula below shows the relationship between income, expenses, and profit.</p>
+<p>`Income = Expenses + Profit`</p>
+<p>About how much was this company's profit, in Japanese yen, in 2007?</p>
+<p>(In 2007, 1 United States dollar was approximately equal to 127 yen.)</p>
+
+<p> A. 1,600 yen</p>
+<p> B. 200,000 yen</p>
+<p> C. 2,500,000 yen</p>
+<p> D. 18,000,000 yen</p>
+<p> E. 25,000,000 yen</p>
+
+<hr>
+<p> Q. 2011-8M8 #11: </p>
+<p>Sketch a four-sided polygon that has the following properties:</p>
+<p>-One pair of opposite sides is parallel but <u>not</u> equal in length. </p>
+<p>- The other pair of opposite sides is equal in length but <u>not</u> parallel. </p>
+
+<hr>
+<p> Q. 2011-8M8 #12: </p>
+<p>A reasonable prediction of the distance d in feet, that a car travels after the driver has applied the brakes can be found by using the formula `d = 0.055r^2`, where r is the speed of the car in miles per hour.</p>
+<p>If Mario is driving at 60 miles per hour and applies the brakes, then according to the formula, how many feet will Mario's car travel before it stops?</p>
+
+<p> A. 330</p>
+<p> B. 198</p>
+<p> C. 10.89</p>
+<p> D. 6.6</p>
+<p> E. 3.3</p>
+
+<hr>
+<p> Q. 2011-8M9 #2: </p>
+<p>Lines `k`, `l`, and `m` are three different lines. If line `k` is parallel to line `l` and line `l` is parallel to line  `m`, which of the following statements must be true? </p>
+<p>If Mario is driving at 60 miles per hour and applies the brakes, then according to the formula, how many feet will Mario's car travel before it stops?</p>
+
+<p> A. Line `k` is perpendicular to line `l`. </p>
+<p> B. Line `k` is perpendicular to line `m`.</p>
+<p> C. Line `k` is parallel to line `m`.</p>
+<p> D. Line `k` intersects line `l`.</p>
+<p> E. Line `k` intersects line `m`.</p>
+
+</body>
+</html>
